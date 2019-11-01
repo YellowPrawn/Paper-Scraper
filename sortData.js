@@ -1,17 +1,19 @@
-const use = require('@tensorflow-models/universal-sentence-encoder');
+var bayes = require('bayes')
+var classifier = bayes()
+const getFiles = require(`./getFiles.js`);
 
-module.exports.sort = function(){
-	// Load the model.
-	use.load().then(model => {
-	  // Embed an array of sentences.
-	  const sentences = [
-		'Hello.',
-		'How are you?'
-	  ];
-	  model.embed(sentences).then(embeddings => {
-		// `embeddings` is a 2D tensor consisting of the 512-dimensional embeddings for each sentence.
-		// So in this example `embeddings` has the shape [2, 512].
-		embeddings.print(true /* verbose */);
-	  });
-	});
+module.exports.sort = function(sentences){
+	
+	for(var i = 0; i < getFile.getTestSize(); i++){//learning functions
+		fs.readFile(`./papers/test_${i}.txt`, function(err, data){
+			data.split(\n<^>);//append this to the end of every test file (unique identifier)
+			classifier.learn(data[0],data[1]);
+		}
+	}
+
+	for(var i =0; i < sentences.length; i++){
+		console.log(classifier.categorize(sentences))
+	}
+
+	getFile.updateTestSize();
 }	
