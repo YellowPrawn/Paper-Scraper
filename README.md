@@ -1,7 +1,13 @@
 # Paper-Scraper
 
-# When manually adding test data, name the file "test_(INT).txt" and place in ./papers. Make sure there are no duplicates file names.
+# When manually adding test data, name the file "test_(INT).json" and place in ./papers. Make sure there are no duplicates file names.
 
-# Label a piece of data by appending "\n<^>" to the end of the test data.
+# Follow standard JSON formatting and ensure you enter data as shown
+#   {
+#       "question":"QUESTION",
+#       "classification":"CLASSIFICATION",
+#   }
 
-# ./papers/size.txt contains basic information for the program. When manually adding test data only change the second line in the file. The second line must be the largest integer used as (INT) for naming "test_(INT).txt". If the largest (INT) value is not specified, some data may not be used for training thus reducing the accuracy of the program.
+# classification is case sensitive. There are no preset classifications except for those used in the sample training data
+
+# If the program outputs the wrong classification, manually change the classification accordingly and rename the file as "test_(INT).json"

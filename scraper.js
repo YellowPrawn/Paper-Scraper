@@ -26,11 +26,13 @@ module.exports.convert = function(fileName){
         	i++;
         }
         for(var i = 0; i<sortedData.length;i++){ //writing questions into file
+            for(var i = 0; i<sortedData.length;i++){ //writing questions into file
             fs.writeFile(`./papers/${fileName}_Q${i}.txt`, sortedData[i], function (err) {
                 if (err) throw err;
             });
         }
-        getFiles.setSortSize(sortedData.length); //amount of data which needs to be sorted
+        }
+        getFiles.setDataSize(sortedData.length); //amount of data which needs to be sorted
     });
 }
 

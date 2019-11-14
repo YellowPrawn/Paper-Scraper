@@ -1,8 +1,18 @@
-const scraper = require('./scraper.js');
-const sortData = require('./sortData.js');
+const readline = require('readline').createInterface({
+	input: process.stdin,
+	output: process.stdout
+})
 
-const fileName = 'Computer_science_paper_1__HL';
-
-const data = scraper.convert(fileName);
-
-/*const item = sortData.sort(thing,testData);*/
+readline.question(`Please input mode \n Create test (C) \n Ammend categorization (A) \n Retrieve question origins (O)\n`,
+	(mode) => {
+		if (mode == "C"){
+			console.log("creating test...");	
+		} else if (mode == "A"){
+			console.log("retrieving test data...");
+		} else if (mode == "O"){
+			console.log("retrieving question origins...");
+		} else {
+			console.log(`invalid choice (${mode})`);
+		}
+	}
+);
