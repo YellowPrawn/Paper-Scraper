@@ -1,0 +1,92 @@
+
+ Theo entered a maze (labyrinth) and tries to get to the centre.  As soon as he arrived at 
+the	first	possibility	to	turn	right	or	left,	he	started	recording	each	move	on	his	phone	so	that	
+he	could	find	his	way	back	to	the	start.		He	entered	the	moves	as	the	direction	he	turned	
+followed by the number of steps taken before the next turn.  For example:
+ R3 ,  L5 ,  L10 ,  R6 ,  ... ,  L4
+ which indicates "TURN right, STEP 3", and then "TURN left, STEP 5" etc.
+ An app on his phone stored the moves in a stack named STK, using 0 for “right” and 1 for “left”.
+ The above moves were therefore stored as
+0 ,  3 ,  1 ,  5 ,  1 ,  10 ,  0 ,  6 , ... ,  1 ,  4.
+ (a)     Explain why a stack is a suitable structure to hold the data. [2]
+ Theo was successful in reaching the centre of the maze and now has to get back to the start.
+ (b)     Construct an algorithm, using appropriate stack access methods, to output the moves 
+needed	to	return	from	the	centre	to	the	first	point	where	Theo	started	recording	his	
+moves.  You can assume that he is facing the correct exit when he starts his return 
+journey.                                    [5] 
+ Another app on the phone gives Theo a visual representation of his path through a maze as 
+a map.  This app makes use of a procedure MOVE(), which outputs the coordinates of Theo’s 
+path	through	a	maze,	in	reference	to	the	point	S,	where	he	first	turned	right	or	left	and	which	
+has coordinates (0, 0).
+ The diagram shows, for a new maze, the map from point S given the following moves:
+ R10 ,  L5 , ...
+(10, 5)
+(10, 0)
+First turning point S (0, 0)
+Enter maze
+ The third move is R8.
+ (c)     State the coordinates on the map after this third move. [1]
+(This question continues on the following page)
+M15/4/COMSC/HP1/ENG/TZ0/XX
+
+– 10 –
+(Question 13 continued)
+ At each point, the direction in which Theo is facing is given by the variables N and E. 
+	   Note	that	before	the	very	first	turn	is	made,	N = 1 and E = 0.
+N = 1, E = 0
+N = –1, E = 0
+N = 0, E = –1                       N = 0, E = 1
+ The following table shows part of the trace of MOVE() according to the TURN and STEP 
+values:  R10 ,  L5 ,  R8 ,  R2 ,  L3 ,  R0.
+ The last move, with a STEP value of 0, indicates that there are no more moves and that the 
+stack is empty.
+         (d)         Copy and complete the table by tracing the algorithm on the following page.   
+Do not write solutions on this page. 
+MoveCoordinatesDirection facing
+TURN      STEP        X        Y        N        E
+0010
+01010001
+1510510
+08
+02
+13
+00
+(This question continues on the following page)
+M15/4/COMSC/HP1/ENG/TZ0/XX
+
+– 11 –
+(Question 13 continued)
+ X, Y = 0                        // Initial coordinates 
+	        N	=	1,	E	=	0	 	    	            //	Direction	facing	at	first	turn
+         output (X, Y, N, E)            // Outputs starting point to the table
+         MOVE(X,Y,N,E)                   // Procedure to move on 
+              input (TURN, STEP) 
+	    		        loop	while	STEP	≠	0	       //	No	more	moves	when	STEP	=	0
+                    if TURN = 0           // Right move
+                         X = X + N*STEP
+                         Y = Y - E*STEP
+                         if N = 0
+                                   N     =     -E
+                                   E     =     0
+                              else     
+                                   E     =     N
+                                   N     =     0
+                              end     if
+                         end     if
+                    if TURN = 1           // Left move
+                         X = X - N*STEP
+                         Y = Y + E*STEP 
+                              if     N     =     0
+                                   N     =     E
+                                   E     =     0
+                              else     
+                                   E     =     -N
+                                   N     =     0
+                              end     if
+                         end     if     
+                    output (X, Y, N, E)
+                    MOVE(X, Y, N, E)
+                    end     loop
+           end  MOVE
+                                     [6]
+M15/4/COMSC/HP1/ENG/TZ0/XX

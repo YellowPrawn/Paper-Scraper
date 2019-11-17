@@ -1,0 +1,15 @@
+
+
+ Trace the following algorithmic fragment for N = 6.  Show all working in a trace table.
+  SUM = 0
+  loop COUNT from 1 to (N div 2)
+       if N mod COUNT = 0 then 
+            SUM = SUM + COUNT
+       end if
+  end loop
+  if SUM = N then 
+       output "perfect" 
+  else  
+       output "not perfect"
+  end if         
+                                                                                                           [4]

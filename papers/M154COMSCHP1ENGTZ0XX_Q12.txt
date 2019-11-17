@@ -1,0 +1,28 @@
+
+
+ In	a	town,	a	set	of	traffic	lights	control	access	from	a	small	road,	where	a	fire	station	is	
+located,	to	a	main	road	that	has	heavy	traffic.		In	times	of	emergency,	many	vehicles	from	
+the	fire	station	may	need	to	leave	the	station	at	the	same	time.		A	system	is	put	in	place	so	
+that	when	a	fire	truck	on	the	small	road	approaches	the	main	road,	the	traffic	lights	switch	to	
+green (Go) on the small road and to red (Stop) on the main road. 
+Small road
+Main road
+Traffic	lights
+Fire station
+Fire truck
+	   (a)	 Outline	the	role	of	sensors	and	a	microprocessor	in	controlling	the	traffic	lights	in	 
+this way.        [4]
+	   (b)	 Suggest	how	the	traffic	lights	can	be	changed	back	to	their	original	state	once	there	are	
+no	more	fire	trucks	coming	from	the	small	road.	[3]
+	   These	traffic	lights	are	controlled	by	embedded	systems	at	the	point	of	use.		It	is	proposed	
+that	they	should	be	controlled	from	the	same	central	computer	as	all	the	other	traffic	lights	in	
+the town.
+ (c) Discuss the advantages and disadvantages	of	running	the	town’s	traffic	light	system	
+on one central computer with multiple inputs and outputs. [5]
+	   A	series	of	cameras	are	installed	at	each	of	the	town’s	traffic	lights.		These	cameras	are	
+connected to the central computer.
+	   (d)	 Discuss	the	social	implications	of	monitoring	traffic	in	this	way.	[3]
+M15/4/COMSC/HP1/ENG/TZ0/XX
+
+– 9 –
+Turn over

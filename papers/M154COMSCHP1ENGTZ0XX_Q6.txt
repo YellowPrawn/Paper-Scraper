@@ -1,0 +1,3 @@
+
+
+ Describe how a GPS system can identify the position of a person.    [3]

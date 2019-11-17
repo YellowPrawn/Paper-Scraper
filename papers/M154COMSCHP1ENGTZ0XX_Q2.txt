@@ -1,0 +1,4 @@
+
+
+ Construct a truth table for the following Boolean expression.
+ (A or B) And (not C or B)                                                           [4]
