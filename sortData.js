@@ -12,7 +12,7 @@ module.exports.sort = function(sentences, fileName){
 	}
 	
 	for(var i = 0; i < getFiles.getDataSize(); i++){//classifying data using AI
-		console.log(classifier.categorize(sentences[i]));
+		console.log(classifier.categorize(sentences[i]));//TODO: cleanup or remove chunk
 	}
 
 	for(var i = 0; i < getFiles.getDataSize(); i++){//adding new data into test set
