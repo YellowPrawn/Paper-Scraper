@@ -6,10 +6,21 @@ const fs = require('fs');
 
 module.exports.sort = function(sentences, fileName){
 	for(var i = 0; i < getFiles.getTestSize(); i++){//learning functions
+<<<<<<< HEAD
 		console.log(i);
 		data = getFiles.getTestData(i);
 		classifier.learn(data.question,data.classification);
 		difficulty.learn(data.question,data.difficulty);
+=======
+		var contents = fs.readFileSync(`./papers/test/test_${i}.json`, 'utf8');
+		var jsonContent = JSON.parse(contents);
+		
+		classifier.learn(jsonContent.question,jsonContent.classification);
+	}
+	
+	for(var i = 0; i < getFiles.getDataSize(); i++){//classifying data using AI
+		console.log(classifier.categorize(sentences[i]));//TODO: cleanup or remove chunk
+>>>>>>> fb79728e47d15b965c2331616ae478b809df49d9
 	}
 
 	for(var i = 0; i < getFiles.getDataSize(); i++){//adding new data into test set

@@ -1,3 +1,5 @@
+//DO NOT SUBMIT IN OFFICIAL IA
+
 const fs = require('fs');
 const pdf = require('pdf-parse');
 const getFiles = require(`./getFiles.js`);
