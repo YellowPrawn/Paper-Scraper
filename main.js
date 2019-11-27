@@ -9,17 +9,18 @@ const readline = require('readline').createInterface({
 
 readline.question(`Please input mode \n Create test (C) \n Amend categorization (A) \n Train model (T)\n`,
 	(mode) => {
-		if (mode == "C"){
-			console.log("creating test...");
-			create.create();
-		} else if (mode == "A"){
-			console.log("retrieving test data...");
-			amend.amend();
-		} else if (mode == "T"){
-			console.log("training model...");
-			train.convert();
-		} else {
-			console.log(`invalid choice: ${mode} entered`);
+		switch(mode){
+			case "C":
+				console.log("creating test...");
+				create.create();
+			case "A":
+				console.log("retrieving test data...");
+				amend.amend();
+			case "T":
+				console.log("training model...");
+				train.convert();
+			default:
+				console.log(`invalid choice: ${mode} entered`);
 		}
 		readline.close();
 	}

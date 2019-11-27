@@ -1,4 +1,6 @@
 const getFiles = require(`./getFiles.js`);
+
+
 module.exports.create = function(){
 	const readline = require('readline').createInterface({
 		input: process.stdin,
@@ -31,7 +33,7 @@ module.exports.create = function(){
 											}
 										} 
 									}
-									balance(questions, ratio, topics, balTemp, num);//TODO: implement concating data into a PDF file.
+									console.log(balance(questions, ratio, topics, balTemp, num));//TODO: implement concating data into a PDF file.
 									readline.close();
 								}
 							);
@@ -55,7 +57,7 @@ function check(topics, data){//check if question matches topic.
 
 function balance(questions, ratio, topics, balTemp, num){//returns appropriate number of questions
 	var final = [];
-	var count = {parseInt(0.5*num,10),parseInt(0.2*num,10),parseInt(0.3*num,10)};
+	var count = {0.5*(Number(num),0.2*(Number(num)),0.3*(Number(num))};
 
 	for(var i = 0; i < ratio.length; i++){
 		var list = [];
@@ -94,4 +96,11 @@ function balanceCheck(data, count, balance){
 	} else {
 		return true;
 	}
+}
+
+function compile(){//TODO: fix thing
+	const doc = new PDFDocument;
+	doc.pipe(fs.createWriteStream('/path/to/file.pdf')); 
+	doc.end();
+
 }
