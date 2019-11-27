@@ -1,0 +1,6 @@
+
+
+ Direct observation is a technique used by a system analyst to determine user requirements 
+for updating a computer system. 
+(a) Identify one advantage of direct observation. [1]
+(b) Identify one disadvantage of direct observation. [1]

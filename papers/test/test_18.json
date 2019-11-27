@@ -1,5 +1,6 @@
 {
 	"question": "Construct the pseudocode for the procedure total, that takes as input a column number of this two-dimensional array and returns the sum of the elements in that column. [4]",
 	"classification": "topic 4",
-	"root": "M184COMSCHP1ENGTZ0XX"
+	"root": "M184COMSCHP1ENGTZ0XX",
+	"difficulty": "hard"
 }

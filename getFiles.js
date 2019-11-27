@@ -22,6 +22,12 @@ module.exports.getTestSize = function(){//get size of actual data
 	return data;
 }
 
+module.exports.getTestData = function(i){
+	var contents = fs.readFileSync(`./papers/test/test_${i}.json`, 'utf8');
+	var jsonContent = JSON.parse(contents);
+	return jsonContent;
+}
+
 module.exports.getDataSize = function(){//get size of actual data
 	const data = fs.readFileSync('./papers/dataSize.txt','utf8');
 	return data;
@@ -36,5 +42,4 @@ module.exports.setDataSize = function(i){//set size of actual data
 module.exports.getData = function(fileName, i){//get actual data
 	const data = fs.readFileSync(`./papers/${fileName}_Q${i}.txt`,'utf8'); 
 	return data;
-	
 }

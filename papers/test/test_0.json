@@ -1,5 +1,6 @@
 {
 	"question": "Outline the pseudocode that the processing must follow when the system sends out the text reminders. [5]",
 	"classification": "topic 4",
-	"root": "M184COMSCHP1ENGTZ0XX"
+	"root": "M184COMSCHP1ENGTZ0XX",
+	"difficulty": "hard"
 }

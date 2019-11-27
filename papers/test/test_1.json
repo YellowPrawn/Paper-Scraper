@@ -1,5 +1,6 @@
 {
 	"question": "Describe two different methods that the medical centre could use that would allow data to be restored should it be lost for any reason. [4]",
 	"classification": "topic 1",
-	"root": "M184COMSCHP1ENGTZ0XX"
+	"root": "M184COMSCHP1ENGTZ0XX",
+	"difficulty": "medium"
 }

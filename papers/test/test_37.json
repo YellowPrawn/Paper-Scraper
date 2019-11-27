@@ -1,1 +1,5 @@
-{"classification":"topic 3","question":"\n\n      Describe      one way that the operating system of a networked workstation hides the complexity \nof the network from the user.  [3]\nM15/4/COMSC/HP1/ENG/TZ0/XX\n\n– 4 –","root":"M154COMSCHP1ENGTZ0XX"}
+{"classification":"topic 3",
+	"question":"\n\n      Describe      one way that the operating system of a networked workstation hides the complexity \nof the network from the user.  [3]\nM15/4/COMSC/HP1/ENG/TZ0/XX\n\n– 4 –",
+	"root":"M154COMSCHP1ENGTZ0XX",
+	"difficulty": "medium"
+}

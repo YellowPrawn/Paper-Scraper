@@ -1,5 +1,6 @@
 {
 	"question": "The medical centre is concerned about the privacy of the data it is storing and has to make decisions concerning: • access to the data stored on this system • storing the data locally or through the use of a cloud service. (c) Discuss the issues that should be considered before making these decisions. [6]",
 	"classification": "topic 1",
-	"root": "M184COMSCHP1ENGTZ0XX"
+	"root": "M184COMSCHP1ENGTZ0XX",
+	"difficulty": "hard"
 }

@@ -1,0 +1,4 @@
+
+
+ Explain the importance of the method isEmpty() when constructing an algorithm which 
+performs operations on a stack data structure. [3]

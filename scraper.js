@@ -6,7 +6,6 @@ var sortedData;
 
 module.exports.convert = function(fileName){
     let dataBuffer = fs.readFileSync(`./papers/${fileName}.pdf`);
-
     pdf(dataBuffer).then(function(data) {
        	sortedData = [data.text];
 

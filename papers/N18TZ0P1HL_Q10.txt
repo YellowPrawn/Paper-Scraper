@@ -1,0 +1,29 @@
+
+
+ An oil and gas company has a networked computer system for use of their employees in the 
+Head Office.
+(a)  (i)   Identify one hardware security measure that will ensure that confidential data 
+from the Head Office cannot be accessed. [1]
+(ii)  Identify one software security measure that will ensure that confidential data from 
+the Head Office cannot be accessed. [1]
+The company also uses the internet to enable communication with employees working on 
+exploration and production in many remote geographical areas.
+(b) Identify one network security measure. [1]
+The sub-sea oil and gas exploration and production unit of the company relies on thousands 
+of kilometres of pipeline which are monitored by a computer control system which can detect 
+leaks.
+(c) Explain the environmental benefit of using a computer control system to monitor the 
+pipeline.                                                                                                                                   [3]                                                                                                                                   
+The process of detecting leaks is carried out by sensors which are continuously monitoring 
+changes in the flow and pressure of the liquids in the pipes.
+This data is processed on a computer in the office.
+If any of sensor values are outside of the acceptable parameters stored on a disk in the 
+office, the following error routines are performed:
+• an alarm is sounded on the computer at the office
+• an email message is sent to managers in the Head Office.
+A member of staff can also configure the system. 
+(d)  Explain the relationship between sensors, output transducers and processor in this 
+situation.                                                                                                                                  [4]
+(e)  Construct a system flowchart to represent the process described above. [5]
+Turn over
+N18/4/COMSC/HP1/ENG/TZ0/XX– 5 –

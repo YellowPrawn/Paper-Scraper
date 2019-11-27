@@ -1,0 +1,9 @@
+
+
+ Distinguish between the use of time slicing and priorities in the scheduling of processes by 
+an operating system. [3]
+Turn over
+N18/4/COMSC/HP1/ENG/TZ0/XX– 3 –
+
+Section B
+Answer all questions.

@@ -1,0 +1,159 @@
+
+ The following method, swap(A,B)is written to exchange the values of variables A and B.
+    swap(A,B)
+      TEMP  =  A
+      B  =  TEMP
+      A  =  B
+    end  swap
+(a)  (i) Assume A = 3 and B = 5. 
+State the values of A and B after execution of swap(A,B). [1]
+(ii) Suggest how the algorithm used in method swap() would need to be modified
+ 
+to 
+successfully exchange the values of variables A and B. [2]
+Method swapRows(MAT,K,L) swaps the elements of two rows (row K and row L) in the 
+two-dimensional array MAT. 
+For example,
+The initial contents of 
+the two-dimensional 
+array MAT
+The contents of the 
+two-dimensional 
+array MAT after 
+execution of method 
+swapRows(MAT,1,4)
+[0][1][2][3][0][1][2][3]
+[0]
+7123
+[0]
+7123
+[1]
+4000
+swapRows(MAT,1,4)
+[1]
+50–10
+[2]
+60–30
+[2]
+60–30
+[3]
+4004
+[3]
+4004
+[4]
+50–10
+[4]
+4000
+[5]
+5–609
+[5]
+5–609
+(b) Use pseudocode to construct an algorithm for the method swapRows().                              [4]
+(This question continues on the following page)
+Turn over
+N18/4/COMSC/HP1/ENG/TZ0/XX– 7 –
+
+(Question 12 continued)
+A game consists of four rounds. In each round a player can score up to 100 points. 
+The data about the game is sorted in alphabetical order of names and stored in the memory 
+as follows
+PLAYERSROUNDSTOTALS
+[0][1][2][3]
+[0]
+Annie
+[0]
+7010233
+[0]
+106
+[1]
+Boris
+[1]
+4005090
+[1]
+180
+[2]
+Hugh
+[2]
+60384290
+[2]
+230
+[3]
+Paul
+[3]
+450060
+[3]
+105
+[4]
+Robby
+[4]
+5501510
+[4]
+80
+[5]
+Tammy
+[5]
+51602090
+[5]
+221
+Where
+PLAYERS is a one-dimensional array holding names of players (currently sorted in 
+alphabetical order).
+ROUNDS is a two-dimensional array holding players’ scores.
+TOTALS is a one-dimensional array holding total scores.
+For example, 
+PLAYER[1] is Boris. The total number of points he scored is 180 and this can be found in 
+TOTALS[1].
+Boris scored 40 points in the first round which can be found in ROUNDS[1][0].
+The value stored in ROUNDS[1][2] is 50 which means that Boris scored 50 points in the 
+third round.
+(c)  (i) State Paul’s total score. [1]
+(ii)  State where Hugh’s score in the fourth round can be found. [1]
+(This question continues on the following page)
+N18/4/COMSC/HP1/ENG/TZ0/XX– 8 –
+
+(Question 12 continued)
+All the data stored in memory should be sorted in ascending order of total score using 
+selection sort.
+For example, after sorting, the data given opposite will be held in memory as follows
+PLAYERSROUNDSTOTALS
+[0][1][2][3]
+[0]
+Hugh
+[0]
+60384290
+[0]
+230
+[1]
+Tammy
+[1]
+51602090
+[1]
+221
+[2]
+Boris
+[2]
+4005090
+[2]
+180
+[3]
+Annie
+[3]
+7010233
+[3]
+106
+[4]
+Paul
+[4]
+450060
+[4]
+105
+[5]
+Robby
+[5]
+5501510
+[5]
+80
+(d)  Construct an algorithm that will sort all the data in ascending order.  
+In your solution you should call methods swap() and swapRows() given in part (a) and 
+part (b). [6]
+– 9 –N18/4/COMSC/HP1/ENG/TZ0/XX

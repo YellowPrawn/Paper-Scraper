@@ -1,5 +1,6 @@
 {
 	"question": "Construct the pseudocode that will search the stack for a specific name, and output its position in the stack. You may assume that all names in the stack are unique. [5]",
 	"classification": "topic 5",
-	"root": "M184COMSCHP1ENGTZ0XX"
+	"root": "M184COMSCHP1ENGTZ0XX",
+	"difficulty": "hard"
 }
