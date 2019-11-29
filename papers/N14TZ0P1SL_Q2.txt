@@ -1,0 +1,7 @@
+
+
+ Outline the function of the
+     (a)     ALU;
+[1]
+     (b)     CU.
+[1]

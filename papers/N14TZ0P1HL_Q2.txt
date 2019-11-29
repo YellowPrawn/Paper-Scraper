@@ -1,0 +1,4 @@
+
+
+ Outline the function of the ALU.
+[1]

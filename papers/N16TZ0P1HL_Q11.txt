@@ -1,0 +1,5 @@
+
+ The diagram shows a list of names held in a circular linked list.  The end of the list is pointed 
+to by an external pointer, X.
+	(a)	    State	the	first	name	in	this	circular	list.	[1]
+Two operations are performed on the list in the following order:

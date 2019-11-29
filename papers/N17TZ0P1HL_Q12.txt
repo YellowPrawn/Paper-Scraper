@@ -1,0 +1,20 @@
+
+
+  A biotechnology company owns a resource centre which collects and classifies organisms  
+for use in research.
+  Only authorized employees are allowed access to some laboratories in the resource centre. 
+ These laboratories are protected by locked doors.  Each door is controlled by a separate 
+microprocessor.  A digital camera is used to scan the iris of an employee who wishes to 
+enter the lab.  If the employee is authorized the doors are unlocked.
+     (a)     Identify     two benefits of using a digital camera as an input device in this control system.[2]
+ (b) Outline the use of a microprocessor in this control system.  [2]
+ (c)  Outline the function of an output transducer.[2]
+ The company is planning to use a centralized computer system to secure the resource 
+centre’s building. 
+ (d) Compare a centrally controlled system with the system described above. [4]
+ The operating system has an important role in this system.
+     (e)     Identify     two functions of the operating system. [2]
+ Polling and interrupt are two operating system management techniques. 
+ (f) Suggest with reasons which of these two techniques is the most appropriate for this 
+centrally controlled system.  [3]
+– 6 –N17/4/COMSC/HP1/ENG/TZ0/XX

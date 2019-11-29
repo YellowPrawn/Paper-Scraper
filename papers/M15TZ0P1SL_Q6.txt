@@ -1,0 +1,4 @@
+
+
+ Describe one way that software developers can ensure that the users are aware of any 
+available updates for their products.  [2]

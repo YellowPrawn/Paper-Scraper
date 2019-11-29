@@ -15,7 +15,7 @@ function input(){
 		input: process.stdin,
 		output: process.stdout
 	})
-	readline.question('Input number to amend\n',
+	readline.question('\n\n\nInput number to amend\n',
 		(i) => {
 			readline.question('Input item to amend (classification (topic), difficulty, question)\n',
 				(item) => {
@@ -37,6 +37,22 @@ function input(){
 								  		if (err) throw err;
 									});	
 									break;
+
+								case "topic":
+									var jsonData = 
+								    {
+								    	"classification": `${amendment}`,//classifying data
+										"question": `${data.question}`,
+										"root": `${data.root}`,
+										"difficulty": `${data.difficulty}`//classifying difficulty
+									};
+								    jsonContent = JSON.stringify(jsonData);
+
+									fs.writeFile(`./papers/test/test_${i}.json`, jsonContent, 'utf8', function (err) {
+								  		if (err) throw err;
+									});	
+									break;
+
 								case "difficulty":
 									var jsonData = 
 								    {

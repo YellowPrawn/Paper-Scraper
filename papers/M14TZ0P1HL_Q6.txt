@@ -1,0 +1,8 @@
+
+
+ Consider the following linked list which is maintained in alphabetical order.
+Jean9Mario7Phoebe2Roman6Samira8
+ With the aid of diagrams, explain how the node
+Joanna16
+ would be inserted into the linked list.
+[3]

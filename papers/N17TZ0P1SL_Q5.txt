@@ -1,0 +1,7 @@
+
+
+ Copy and complete the following truth table.
+ABA NOR B(A NOR B) OR A
+FALSEFALSE......
+............
+[3]

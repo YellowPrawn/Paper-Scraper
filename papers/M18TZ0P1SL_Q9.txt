@@ -1,0 +1,9 @@
+
+
+ For an identified application, explain why a binary search would be preferred to a  
+linear search. [3]
+Turn over
+M18/4/COMSC/SP1/ENG/TZ0/XX– 3 –
+
+Section B
+Answer all questions.

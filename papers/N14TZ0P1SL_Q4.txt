@@ -1,0 +1,8 @@
+
+
+	(a)	   Define	the	term	computer network.[1]
+ (b) Identify a type of network that would allow secure access from an employee’s home to 
+their company’s LAN.
+[1]
+     (c)     Outline     two benefits	and	two problems of employees working from home.
+[4]

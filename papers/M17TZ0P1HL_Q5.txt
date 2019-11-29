@@ -1,0 +1,5 @@
+
+
+ One of the functions of an operating system is memory management.  
+ Describe how this function prevents the system from crashing when more than one program is 
+run at the same time.[2]

@@ -1,0 +1,3 @@
+
+
+ Outline how a sub-procedure can be considered an example of abstraction. [2]

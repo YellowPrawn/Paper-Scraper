@@ -1,0 +1,34 @@
+
+
+ A company has expanded its office space into nearby rooms and has decided to set up a 
+local area network (LAN) to support its operations.  
+The LAN will connect the room where the server is installed to new computers in the 
+additional office space.  The network engineer produced the following Gantt chart for 
+this task.
+TASK NAME12345678910
+Lay ducts for new cables
+Lay cables inside the 
+ducts
+Install connectors on wall 
+of server room
+Install connectors on wall 
+of new office space
+Test the cabling
+Connect the new 
+computers with the cabling
+(a)    Define the term concurrent processing.                                                                                  [1]
+(b)     Identify two tasks that will be carried out concurrently. [1]
+(c)     Identify     two tasks that will be carried out sequentially. [1]
+After 5 years the company decided to replace the LAN with a wireless local area network 
+(WLAN).
+(d)     Outline     two advantages, to this company, of installing a WLAN. [4]
+A WLAN will introduce additional security issues for the company.
+(e) Discuss any two of these issues and the ways in which the company might  
+resolve them. [4]
+The company is considering expanding their network to allow employees to connect from 
+anywhere in the world.  The expanded network would need to provide security and allow the 
+employees full functionality of the internal network. 
+(f) Explain how setting up a virtual private network (VPN) would provide a  
+suitable solution.  [4]
+Turn over
+M18/4/COMSC/SP1/ENG/TZ0/XX– 5 –

@@ -1,0 +1,14 @@
+
+
+ Consider the following algorithm, where N is a positive integer.
+ loop for K from 1 to N
+      loop for J from 1 to N
+        if K = J then
+          output  K
+        end if
+      end loop
+ end loop
+ (a) Determine the number of times the comparison K = J will be performed.[1]
+ (b) Determine the number of times the statement output K will be executed.[1]
+ (c) Construct the algorithm which performs the same task using a single while loop, 
+instead of nested for loops.[4]

@@ -1,0 +1,3 @@
+
+
+      Explain      two functions that an operating system needs to perform in relation to multitasking. [4]

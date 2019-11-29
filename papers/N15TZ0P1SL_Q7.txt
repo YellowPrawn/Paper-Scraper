@@ -1,0 +1,19 @@
+
+
+ A hardware shop supplies a wide variety of bathroom equipment.  There are 15 shop 
+assistants	who	serve	customers,	3	office	staff	who	handle	the	administration,	and	a	manager.
+ A specialized company is asked to design and implement a new computer system for  
+the shop.
+     (a)     (i)     Identify     two different types of users of the system. [2]
+  (ii) Explain the role of users in the process of developing the new computer system.[3]
+ (b) Describe why it is useful to produce more than one prototype of the new system. [2]
+     (c)     Outline     two problems that may occur when transferring data from the old system to the 
+new system.[4]
+ The new system is implemented using parallel running.
+ (d) (i) Outline what is meant by parallel running.[2]
+                  (ii)         Outline         one reason for choosing parallel running as opposed to a direct 
+changeover. [2]
+N15/4/COMSC/SP1/ENG/TZ0/XX
+
+– 5 –
+Turn over 

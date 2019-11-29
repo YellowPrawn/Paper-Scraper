@@ -1,0 +1,24 @@
+
+
+ A new higher level programming language is being developed.
+(a)     Identify     two reasons why consistent grammar and syntax should be essential features 
+of a higher level programming language. [2]
+(b)     Identify     two features of a user interface that will allow application programmers to 
+interact more easily with the programming language. [2]
+(c)     State     one method of providing user documentation. [1]
+Application programmers who use this programming language will be able to choose to use 
+either an interpreter or a compiler.
+(d) (i) Outline the need for an interpreter or a compiler. [2]
+(ii)     Describe     one advantage to application programmers of having both an 
+interpreter and a compiler available. [2]
+One	of	the	predefined	sub-programs	in	the	new	language	is	
+sumOdd().  It accepts an integer  
+N as input.  If N<=0 it outputs -1,	otherwise	it	outputs	the	sum	of	the	first	N odd numbers.  
+For example:
+sumOdd(4) outputs 16, because 4 is not less than 0, and 1 + 3 +	5	+ 7 = 16.
+sumOdd(−3) outputs −1, because −3 is less than 0.
+(e) Construct, in pseudocode, the algorithm for sumOdd().                                                         [4]
+(f)	Outline	the	need	for	predefined	sub-programs	and	collections.	[2]
+N16/4/COMSC/SP1/ENG/TZ0/XX
+
+– 6 –

@@ -1,0 +1,34 @@
+
+
+	  Three	IB	  students	are	  working	on	  a	 programming	project.		They	have	    10	  days	   to	  complete	 
+the	work.		To	plan	the	project	activities	and	timeline	they	produce	the	following	Gantt	chart.
+Project activityTimeline in days
+12345678910
+Define	the	problem
+Design	algorithms	
+Code	the	program
+Design	test	data
+Test	and	correct	modules
+Overall	program	test
+Produce	documentation
+(a)     State     two	tasks	students	should	perform	to	define	a	problem.
+[2]
+(b)     Identify     two	tools	or	techniques	that	students	could	use	to	represent	algorithms.
+[1]
+(c)	  Discuss	whether	beta	testing	would	be	appropriate	in	this	scenario.
+[3]
+(d)     Outline     three criteria	that	   could	be	  used	   when	deciding	which	programming	language	is	
+to	be	used	for	coding.
+[3]
+(e)	  From	the	Gantt	chart	above
+      (i)      identify      two tasks that could be done concurrently;
+[1]
+     (ii)     identify     two	tasks	that	should	be	done	sequentially.
+[1]
+(f)	  Explain	why	a	Gantt	chart	may	not	be	suitable	for	planning	a	large	business	project.
+[4]
+
+8814-7011
+– 7 –
+Turn over
+N14/4/COMSC/HP1/ENG/TZ0/XX

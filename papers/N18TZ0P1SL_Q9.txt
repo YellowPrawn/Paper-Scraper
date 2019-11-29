@@ -1,0 +1,12 @@
+
+
+ (a) Outline the need for higher level languages. [2]
+(b) Explain two benefits of using sub-procedures within a computer program. [4]
+(c)     Identify     three characteristics of a collection.                                                                           [3]
+Collection NUMBERS already exists and stores real numbers.
+(d) Construct in pseudocode an algorithm, using the access methods of a collection, which 
+will iterate through the collection NUMBERS and count how many elements stored in the 
+collection are in the interval [–1,1]. 
+The final answer should be output. [6]
+Turn over
+N18/4/COMSC/SP1/ENG/TZ0/XX– 3 –

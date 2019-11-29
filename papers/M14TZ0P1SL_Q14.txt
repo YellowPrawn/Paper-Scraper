@@ -1,0 +1,23 @@
+
+    The faceplate of a car stereo has six buttons for selecting one of six preferred radio stations.  
+As part of the internal representation of a microprocessor there is an array with six positions, 
+carrying the information about the radio frequencies, as follows.
+Radio
+[0][1][2][3][4][5]
+100.488.790.2104.593.8106.2
+(a)    State the information at Radio[2].
+[1]
+(b)    Outline how a numerical frequency could be stored in a fixed-length string.
+[2]
+(c)    Construct  an  algorithm,  in  pseudocode,  that  calculates  the  range  of  frequencies  
+(ie the difference between the highest and lowest frequencies) of any set of six selected 
+radio stations.
+[6]
+A display in the faceplate shows the name and frequency of the selected radio station.  The name 
+is automatically captured when storing a preference.
+(d)    Outline how a collection of objects could be used to store the name and frequency data in 
+the radio. 
+[2]
+(e)    Construct an algorithm, in pseudocode, to access and display the name and frequency of 
+a station when a button is pressed.
+[4]

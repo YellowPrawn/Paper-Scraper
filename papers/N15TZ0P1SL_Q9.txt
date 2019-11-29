@@ -1,0 +1,34 @@
+
+ A	candy	company	manufactures	20	different	kinds	of	candy,	each	identified	by	a	product	ID.		
+An array, 
+Product_ID, is used to store the product IDs, and another array, Unit_Price, is 
+used	to	store	the	price	per	unit	of	each	type	of	candy.		The	unit	price	of	the	product	identified	
+by 
+Product_ID[N] is equal to Unit_Price[N] for any index N.
+Product_IDUnit_Price
+Mints-1A[0]15.20
+Choco-1B[1]18.10
+Jelly-1Q[2]16.30
+...
+Choco-2A[19]11.90
+	(a)	    State	the	price	of	the	candy	identified	by	Product_ID[2].[1]
+ (b) Explain the steps that would be needed in an algorithm to calculate the average unit 
+price.[3]
+ (c) Construct the algorithm that will output the price of a candy after its product ID is 
+entered by the user.  The algorithm should output an appropriate message if the 
+product ID entered does not appear in the array 
+Product_ID.[6]
+ The company maintains two warehouses each of which stocks a selection of the 20 types of 
+candy indicated above.
+	The	first	warehouse	stocks	15	items	and	their	IDs	are	stored	in	an	array,	
+One.  The second 
+warehouse stocks 10 items and their IDs are stored in an array, Two.
+All product IDs common to both warehouses will be placed in an array, 
+Three.
+ (d) (i) State the maximum number of common product IDs which can be placed  
+in 
+Three.[1]
+  (ii) Construct the algorithm that will place all product IDs common to both 
+warehouses in 
+Three.[4]
+N15/4/COMSC/SP1/ENG/TZ0/XX
