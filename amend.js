@@ -1,5 +1,6 @@
 const getFiles = require('./getFiles.js');
 const fs = require('fs');
+const main = require('./main.js');
 
 module.exports.amend = function(){
 	for(var i = 0; i < getFiles.getTestSize(); i++){
@@ -7,7 +8,7 @@ module.exports.amend = function(){
 		console.log(`\n\n\n------------\n     ${i}     \n------------\n`);
 		console.log(`root file:   ${data.root}\n\ntopic:   ${data.classification}\n\ndifficulty:   ${data.difficulty}\n\nquestion:${data.question}`);
 	}
-	input();	
+	input();
 }
 
 function input(){
@@ -89,6 +90,7 @@ function input(){
 										input();
 									} else {
 										readline.close();
+										main.main();
 									}
 								}
 							);	

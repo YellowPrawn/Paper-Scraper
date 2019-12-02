@@ -1,6 +1,7 @@
 const getFiles = require(`./getFiles.js`);
 const officegen = require('officegen');
 const fs = require('fs');
+const main = require('./main.js');
 
 module.exports.create = function(){
 	const readline = require('readline').createInterface({
@@ -34,6 +35,7 @@ module.exports.create = function(){
 									}
 									compile(balance(questions, ratio, topics, balTemp, num));//TODO: implement concating data into a PDF file.
 									readline.close();
+									main.main();
 								}
 							);
 						}
@@ -115,7 +117,7 @@ function compile(final){//TODO: fix thing
 	// Create a new paragraph:
 	for(var i = 0; i<final.length;i++){
 		let pObj = docx.createP();
-		pObj.addText(final[i]);
+		pObj.addText(`${i+1}) \n  ${final[i]}\n\n\n`);
 	}
 	// Let's generate the Word document into a file:
 

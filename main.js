@@ -2,9 +2,14 @@ const create = require('./create.js');
 const train = require('./train.js');
 const amend = require('./amend.js');
 
-main();
+start();
 
 module.exports.main = function(){
+	start();
+}
+
+function start(){
+
 	const readline = require('readline').createInterface({
 		input: process.stdin,
 		output: process.stdout
