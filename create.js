@@ -1,5 +1,6 @@
 const getFiles = require(`./getFiles.js`);
-
+const officegen = require('officegen');
+const fs = require('fs');
 
 module.exports.create = function(){
 	const readline = require('readline').createInterface({
@@ -34,7 +35,7 @@ module.exports.create = function(){
 										} 
 									}
 									console.log(balance(questions, ratio, topics, balTemp, num));//TODO: implement concating data into a PDF file.
-									readline.close();
+									compile(readline.close());
 								}
 							);
 						}
@@ -98,9 +99,37 @@ function balanceCheck(data, count, balance){
 	}
 }
 
-function compile(){//TODO: fix thing
-	const doc = new PDFDocument;
-	doc.pipe(fs.createWriteStream('/path/to/file.pdf')); 
-	doc.end();
+function compile(final){
 
+	// Create an empty Word object:
+	let docx = officegen('docx')
+
+	// Officegen calling this function after finishing to generate the docx document:
+	docx.on('finalize', function(written) {
+	  console.log(
+	    'Finish to create a Microsoft Word document.'
+	  )
+	})
+
+	// Officegen calling this function to report errors:
+	docx.on('error', function(err) {
+	  console.log(err);
+	})
+
+	// Create a new paragraph:
+	for(var i = 0; i < final.length; i++){
+		let pObj = docx.createP();
+		pObj.addText(final[i]);
+	}
+
+	// Let's generate the Word document into a file:
+
+	let out = fs.createWriteStream('example.docx')
+
+	out.on('error', function(err) {
+	  console.log(err);
+	})
+
+	// Async call to generate the output file:
+	docx.generate(out);
 }
