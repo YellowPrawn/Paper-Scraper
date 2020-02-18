@@ -1,41 +1,41 @@
 const getFiles = require(`./getFiles.js`);
 const officegen = require('officegen');
 const fs = require('fs');
+const main = require('./main.js');
 
-module.exports.create = function(){
+module.exports.create = function(){ //calls readline for console input
 	const readline = require('readline').createInterface({
 		input: process.stdin,
 		output: process.stdout
 	})
-	readline.question(`Input topic(s) (seperate the values by spaces)\n`,
+	readline.question(`Input topic(s) (seperate the values by comma)\n`,
 		(topic) => {
 			readline.question(`Input paper length (number of questions)\n`,
 				(num) => {
-					readline.question(`Input ratio of topics (between 0 and 1)\n`,
-						(ratio) => {
+					readline.question(`Input ratio of topics (between 0 and 1, seperate the values by comma)\n`,
+						(ratios) => {
 							readline.question(`Input difficulty of questions (easy, medium, hard). If you want an authentic paper, input nothing\n`,
 								(difficulty) => {
-									var topics = topic.split(" ");
+									var topics = topic.split(",");
+									var ratio = ratios.split(",");
 									var questions = [];
 									var balTemp = false;
 									for(var i = 0; i < getFiles.getTestSize(); i++){//check difficulty for each question
 										data = getFiles.getTestData(i);
-										if(check(topics, data)){ //check if question matches topic requested
-											if(difficulty=="easy" && data.difficulty=="easy"){ 
-												questions.push(data);
-											} else if(difficulty=="medium" && data.difficulty=="medium"){
-												questions.push(data);
-											} else if (difficulty=="hard" && data.difficulty=="hard"){
-												questions.push(data);
-											} else if (difficulty==""){ //"authentic" difficulty creator
-												balTemp = true;
-											} else {
-												console.log("error: not a difficulty");
-											}
-										} 
+										if(difficulty=="easy" && data.difficulty=="easy"){ 
+											questions.push(data);
+										} else if(difficulty=="medium" && data.difficulty=="medium"){
+											questions.push(data);
+										} else if (difficulty=="hard" && data.difficulty=="hard"){
+											questions.push(data);
+										} else if (difficulty==""){ //"authentic" difficulty creator
+											questions.push(data);
+											balTemp = true;
+										}
 									}
-									console.log(balance(questions, ratio, topics, balTemp, num));//TODO: implement concating data into a PDF file.
-									compile(readline.close());
+									compile(balance(questions, ratio, topics, balTemp, num)); //calls compile() function
+									readline.close();
+									main.main();
 								}
 							);
 						}
@@ -46,45 +46,45 @@ module.exports.create = function(){
 	);
 }
 
-function check(topics, data){//check if question matches topic.
-	for(var i = 0; i < topics.length; i++){
-		if(data == topics[i]){
-			return(true);
-		} else {
-			return(false);
-		}
-	}
-}
-
-function balance(questions, ratio, topics, balTemp, num){//returns appropriate number of questions
+function balance(questions, ratio, topic, balTemp, num){//returns appropriate number of questions
 	var final = [];
-	var count = {0.5*(Number(num),0.2*(Number(num)),0.3*(Number(num))};
+	var list = [];
+	var count = [Number.parseInt(0.4*num,10), Number.parseInt(0.4*num,10), Number.parseInt(0.2*num,10)];
+
+	console.log("\n\n\nQuestion origin files:");
 
 	for(var i = 0; i < ratio.length; i++){
-		var list = [];
 		for(var j = 0; j < questions.length; j++){//obtaining questions matching topic
-			if(question[j].classification==topic[i]){
-				list.push(question[j].question);
+			if(questions[j].classification==topic[i]){
+				list.push(questions[j]);
 			}
 		}
-		while(final.length!=num*ratio[i]){
-			const add = Math.floor(Math.random() * 10);//choose random integer
-			var check = false;
+
+		if(list.length==0){
+			console.log("no questions availiable, try again");
+			break;
+		}
+		while(Number.parseInt(final.length*ratio[i],10) != Number.parseInt(num*ratio[i],10) && list.length > final.length) {
+			const add = getRandomInt(list.length);//choose random integer TODO: fix range
+			var check = true;
 			for(var j = 0; j < final.length; j++){//check if question has been added to final array
-				if(list[add]!=final[j] && balanceCheck(list[add].data, count, balance)){
+				if(list[add].question!=final[j] && balanceCheck(list[add], count, balTemp)){
 					check = true;
+				}else{
+					check = false;
 				}
 			}
 			if(check==true){
-				final.push(list[add]);
+				final.push(list[add].question);
+				console.log(list[add].root);
 			}
 		}
 	}
 	return final;
 }
 
-function balanceCheck(data, count, balance){
-	if(balance==true){
+function balanceCheck(data, count, balTemp){
+	if(balTemp==true){
 		if(count[0] != 0 && data.difficulty=="easy"){
 			return true;
 		} else if(count[1] != 0 && data.difficulty=="medium"){
@@ -100,36 +100,38 @@ function balanceCheck(data, count, balance){
 }
 
 function compile(final){
-
 	// Create an empty Word object:
+	var d = new Date();
 	let docx = officegen('docx')
 
 	// Officegen calling this function after finishing to generate the docx document:
 	docx.on('finalize', function(written) {
-	  console.log(
-	    'Finish to create a Microsoft Word document.'
-	  )
-	})
+	  console.log('\n\n\nPaper compiled\n\n');
+	});
 
 	// Officegen calling this function to report errors:
 	docx.on('error', function(err) {
 	  console.log(err);
-	})
+	});
 
 	// Create a new paragraph:
-	for(var i = 0; i < final.length; i++){
+	for(var i = 0; i<final.length;i++){
 		let pObj = docx.createP();
-		pObj.addText(final[i]);
+		pObj.addText(`${i+1}) \n  ${final[i]}\n\n\n`);
 	}
-
 	// Let's generate the Word document into a file:
 
-	let out = fs.createWriteStream('example.docx')
+	let out = fs.createWriteStream(`./files/${d.getFullYear()}_${d.getMonth()+1}_${d.getDate()}_${d.getMinutes()}_paper.docx`);
 
 	out.on('error', function(err) {
 	  console.log(err);
-	})
+	});
 
 	// Async call to generate the output file:
 	docx.generate(out);
 }
+
+function getRandomInt(max) {
+	return Math.floor(Math.random() * Math.floor(max));
+}
+
