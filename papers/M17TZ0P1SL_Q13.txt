@@ -1,0 +1,15 @@
+
+ A	multinational	business	requires	secure	communication	between	its	offices	in	different	
+countries.  The business’s salesforce also needs secure remote access, as they travel the 
+world.
+     (a)     (i)     Identify two different types of network that can be combined to use the internet  
+to address the above requirements.[2]
+ 
+                  (ii)         For one	of	the	networks	identified	in	part	(a)(i),	describe	the	security	
+characteristics that are particular to this network.[3]
+ Packet switching is used for sending data over the internet.
+         (b) Discuss the importance of protocols in ensuring the successful preparation, 
+transmission and delivery of data using packet switching.[6]
+         (c)     Describe     two advantages to society of the increased availability of WiFi outside the 
+home.[4]
+M17/4/COMSC/SP1/ENG/TZ0/XX

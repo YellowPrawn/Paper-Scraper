@@ -1,0 +1,33 @@
+
+ The following method, calcBMI() accepts person’s height (H) in metres (m) and weight (W) 
+in kilograms (kg) and returns their Body Mass Index (BMI).
+    calcBMI(H, W)
+     X = H * H
+      B = W / X
+      return  B
+    endcalcBMI
+Boris weighs 104 kg and is 2.00 m tall. His BMI can be calculated by calling method 
+calcBMI() as follows
+BorisBMI = calcBMI(2.00, 104).
+(a) State the value of variable BorisBMI.  [1]
+A person can belong to one of the following four weight categories:
+BMIWeight category
+less than 18.5underweight
+from 18.5 but less than 25.0 normal weight
+from 25.0 but less than 30.0overweight
+greater than or equal to 30.0 obese
+(b) Use pseudocode to construct an algorithm which accepts a person’s BMI and outputs 
+the weight category the person belongs to.  [4]
+(This question continues on the following page)
+N18/4/COMSC/SP1/ENG/TZ0/XX– 4 –
+
+(Question 10 continued)
+The data about a group of adults and their height measurement (in metres) and weight 
+measurement (in kg) is held in three one-dimensional arrays.
+NAMEWEIGHTHEIGHT
+(kg)(m)
+[0]
+Annie
+[0]
+     52.40
+[0]

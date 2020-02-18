@@ -1,0 +1,14 @@
+
+
+ Construct a trace table for the following algorithm
+    A = 3
+   B = 7
+   loop while B >= A
+     A = A + 1
+      output(B  –  A)
+     B = B - 1
+    end  loop  [4]
+N18/4/COMSC/SP1/ENG/TZ0/XX– 2 –
+
+Section B
+Answer all questions.

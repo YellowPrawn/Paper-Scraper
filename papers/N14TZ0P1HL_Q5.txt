@@ -1,0 +1,6 @@
+
+
+	  Construct	the	truth	table	for	the	following	Boolean	expression.
+X = 
+not A and B	or A and not	B
+[4]

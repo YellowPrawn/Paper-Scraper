@@ -1,5 +1,6 @@
 const getFiles = require('./getFiles.js');
 const fs = require('fs');
+const main = require('./main.js');
 
 module.exports.amend = function(){
 	for(var i = 0; i < getFiles.getTestSize(); i++){
@@ -7,7 +8,7 @@ module.exports.amend = function(){
 		console.log(`\n\n\n------------\n     ${i}     \n------------\n`);
 		console.log(`root file:   ${data.root}\n\ntopic:   ${data.classification}\n\ndifficulty:   ${data.difficulty}\n\nquestion:${data.question}`);
 	}
-	input();	
+	input();
 }
 
 function input(){
@@ -15,7 +16,7 @@ function input(){
 		input: process.stdin,
 		output: process.stdout
 	})
-	readline.question('Input number to amend\n',
+	readline.question('\n\n\nInput number to amend\n',
 		(i) => {
 			readline.question('Input item to amend (classification (topic), difficulty, question)\n',
 				(item) => {
@@ -37,6 +38,22 @@ function input(){
 								  		if (err) throw err;
 									});	
 									break;
+
+								case "topic":
+									var jsonData = 
+								    {
+								    	"classification": `${amendment}`,//classifying data
+										"question": `${data.question}`,
+										"root": `${data.root}`,
+										"difficulty": `${data.difficulty}`//classifying difficulty
+									};
+								    jsonContent = JSON.stringify(jsonData);
+
+									fs.writeFile(`./papers/test/test_${i}.json`, jsonContent, 'utf8', function (err) {
+								  		if (err) throw err;
+									});	
+									break;
+
 								case "difficulty":
 									var jsonData = 
 								    {
@@ -73,6 +90,7 @@ function input(){
 										input();
 									} else {
 										readline.close();
+										main.main();
 									}
 								}
 							);	

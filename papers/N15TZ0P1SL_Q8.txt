@@ -1,0 +1,46 @@
+
+
+ The following diagram shows the structure of the random access memory (RAM).
+Address of the  
+memory location
+(in hexadecimal)
+Contents of the 
+memory location
+(in hexadecimal)
+.
+.
+.
+.
+.
+.
+100000EF1079
+100151AF6780
+1003E435FABC
+.
+.
+.
+.
+.
+.
+Memory 
+address 
+register
+Memory 
+data
+register
+ (a) Calculate the number of bits in each memory location. [1]
+ (b) Calculate the number of bytes in each address. [1]
+ (c) Outline the function of the:
+  (i) memory address register[2]
+  (ii) memory data register. [2]
+     (d)     (i)     Identify     two functions of the operating system. [2]
+  (ii) State where the operating system is held when the computer is turned off.  [1]
+ The machine instruction cycle refers to the retrieval of an instruction from the RAM, and 
+subsequently decoding, executing and storing the result.
+ (e) (i) Construct a diagram to illustrate the structure of a central processing unit (CPU), 
+clearly	showing	the	flow	of	data	within	the	CPU.	[4]
+  (ii) Identify the part of the CPU which performs decoding. [1]
+  (iii) Identify the part of the CPU which executes the instruction.[1]
+N15/4/COMSC/SP1/ENG/TZ0/XX
+
+– 6 –

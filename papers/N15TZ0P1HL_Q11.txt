@@ -1,0 +1,49 @@
+
+ A population study divides a metropolitan area into seven regions: A–G.
+ The following table shows the current population (in millions) of the regions.
+RegionCurrent population 
+(millions)
+A2.3
+B2.1
+C1.2
+D1.4
+E1.5
+F1.1
+G0.8
+ Two one-dimensional arrays, 
+Region and Curr_Pop, are used to hold this data. 
+ For example, 
+Region[0] ='A'.  The population in region A is 2.3 million and 2.3 is found in 
+Curr_Pop[0].
+ (a) Construct the algorithm that will output the total population in the metropolitan area.[3]
+ The numbers in the following table represent expected percentages of yearly migration from 
+one region to another, obtained by analysing historical migration data.  For example, it is 
+expected that 0.32 % of the current population of region B will move to region C.
+ The diagonal entries represent a region’s internal growth rate.  For example, the population 
+of region C is expected to increase by 1.2 % as a result of the births and deaths of people 
+currently living in region C.
+To
+From
+ABCDEFG
+A1.100.210.210.050.200.200.29
+B0.301.200.320.250.200.090.31
+C0.250.221.200.350.300.230.12
+D0.100.330.361.300.090.120.20
+E0.200.220.240.351.000.200.21
+F0.120.210.130.210.221.400.31
+G0.050.030.300.200.230.260.90
+(This question continues on the following page)
+N15/4/COMSC/HP1/ENG/TZ0/XX
+
+– 9 –
+(Question 11 continued)
+ (b) (i) State the percentage of the population of region G that are expected to move to 
+region A.[1]
+                  (ii)         Determine         the         number of people from region B who are expected to move to 
+region E.[1]
+  (iii) Describe how the change in population of region F in one year could be 
+determined. [3]
+ (c) Construct the algorithm that will predict the population in each region after 10 years.  
+You should assume that the yearly migration percentages, given in the table on page 8, 
+remain the same over the 10 years.[7]
+N15/4/COMSC/HP1/ENG/TZ0/XX

@@ -1,0 +1,3 @@
+
+
+ Describe the function of the control unit (CU) in the central processing unit (CPU). [2]

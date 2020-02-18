@@ -1,0 +1,4 @@
+
+
+ Explain why the speed of data transmission across a network can vary.
+[3]

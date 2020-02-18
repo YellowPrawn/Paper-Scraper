@@ -1,0 +1,14 @@
+
+
+ The temperature, humidity, light levels and automatic watering of plants inside the 
+greenhouses (glasshouses) of a garden centre are centrally monitored and controlled.
+(a)	    Define	the	term	analog data.                                                                                                   [1]
+(b) With reference to sensors, transducers and the processor, explain the control process 
+that	takes	place	in	the	greenhouse	(glasshouses).			[5]
+(c)	Outline	the	role	of	the	operating	system	specific	to	this	scenario.			[4]
+(d) Describe the difference between polling and interrupt in the event that some of the 
+sensors malfunction. [3]
+(e) Compare a centrally controlled system with a distributed system. [2]
+N16/4/COMSC/HP1/ENG/TZ0/XX
+
+– 6 –

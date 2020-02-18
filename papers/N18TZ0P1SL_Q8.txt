@@ -1,0 +1,12 @@
+
+
+ (a) (i)      Distinguish between random access memory (RAM) and read only memory (ROM). [3]
+(ii) Outline the function of an operating system in managing primary memory. [2]
+(b)  Explain the roles of the data bus and the address bus in the machine instruction cycle. [4]
+(c)  (i)  State how the data stored in the following byte will be represented in hexadecimal. [1]
+01011110
+(ii) State how many integers could be represented in this byte. [1]
+(iii) Outline why this byte could not be used to represent characters such as those 
+used in Chinese. [2] 
+(d) Construct a truth table with two input variables. If the input variables are equal the 
+value of the output variable should be True, otherwise it should be False.                             [2]

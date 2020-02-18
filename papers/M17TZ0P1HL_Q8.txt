@@ -1,0 +1,3 @@
+
+
+ Explain how the use of media access control (MAC) addresses can improve security. [3]

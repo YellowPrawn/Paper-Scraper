@@ -1,0 +1,17 @@
+
+
+ Consider the following algorithm.
+Begin
+K 
+= 47
+N 
+= 10
+K 
+= K div 2
+K mod N 
+< 3
+Output K
+End
+Output K
+YESNO
+ Determine the outputs that will be produced by this algorithm. [3]

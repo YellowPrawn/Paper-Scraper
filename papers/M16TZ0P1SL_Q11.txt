@@ -1,0 +1,18 @@
+
+
+	   An	examination	office	of	a	university	must	securely	store	students’	examination	papers	and	
+their	grades.		The	office	keeps	the	documentation	of	past	students	for	two	years.		After	two	
+years	the	office	only	stores	the	student	grades.		All	documentation	of	current	students	is	
+frequently accessed for other operations and the volume of the data increases quickly. 
+	To	better	support	its	operations,	the	office	is	creating	a	new	system	to	provide	this	storage.	
+     (a)     Identify     two aspects of the data that need to be taken into account during the planning 
+of the new system. [2]
+ (b) Describe how direct observations on the current system may provide information to 
+help propose a suitable new system. [3]
+	A	prototype	of	the	new	system	is	created	to	present	to	the	examination	office.
+ (c) Describe the purpose of this prototype.  [3]
+	The	examination	office	needs	to	upgrade	the	computing	resources	for	their	operations,	and	
+this will require data migration.
+     (d)     Discuss     two possible problems that may occur during data migration. [4]
+     (e)     Outline     one	economic	aspect	that	the	examination	office	needs	to	take	into	account	to	
+support parallel running. [3]

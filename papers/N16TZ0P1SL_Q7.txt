@@ -1,0 +1,15 @@
+
+
+ Outline the features of a virtual private network (VPN). [2]
+X,N
+falsetrue
+P=1
+N>0
+P
+P=P*X
+N=N-1
+N16/4/COMSC/SP1/ENG/TZ0/XX
+
+– 4 –
+Section B
+Answer all questions.

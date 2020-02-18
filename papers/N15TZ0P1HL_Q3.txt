@@ -1,0 +1,5 @@
+
+
+ Construct a truth table for the following Boolean expression.
+(A 
+and B) nor C[3]

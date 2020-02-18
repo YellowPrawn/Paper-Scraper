@@ -1,0 +1,4 @@
+
+
+ Outline how a colour can be represented in a computer.
+[2]

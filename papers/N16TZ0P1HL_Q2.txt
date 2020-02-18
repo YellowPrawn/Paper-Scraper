@@ -1,0 +1,5 @@
+
+
+ (a) State the purpose of cache memory. [1]
+(b) Draw a diagram to show the relationship between random access memory (RAM),  
+the processor and cache memory. [1]

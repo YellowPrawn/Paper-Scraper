@@ -1,0 +1,7 @@
+
+
+ In an 8-bit register, state the binary representation of the hexadecimal number 3B. [2]
+M16/4/COMSC/SP1/ENG/TZ0/XX
+
+– 3 –
+Turn over 

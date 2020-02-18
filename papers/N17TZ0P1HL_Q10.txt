@@ -1,0 +1,31 @@
+
+
+  An application package used in an office includes a word processor. 
+ (a) Describe how a spellchecker checks whether a word in a text file is correctly spelt 
+or not.[2]
+ The office manager decides to buy and install new software and hardware. 
+     (b)     Outline     one problem that may arise from the installation of new hardware and software 
+in the office.[2]
+ The changeover to the new system can be achieved by either direct changeover or 
+phased conversion.
+ (c)  Compare direct changeover and phased conversion.[4]
+ The new software allows basic text summaries and analysis to help check text files, 
+including functions such as calculating word frequency.
+ (d)     Identify     one way of testing this software.[1]
+ One of the methods in this software is findFirst(CH,	CHARARRAY) which accepts a 
+character, CH, and a one-dimensional array of characters, CHARARRAY, and returns the 
+position of the first occurrence of character CH in CHARARRAY.  It returns −1 if CH does not 
+appear in the array CHARARRAY.
+For example, consider the character array MESSAGE, which is of length 19.
+[0][1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18]
+AURORAMUSISAMICA.
+ For this array:
+ yThe character at position 8 in the sentence is “U” and hence MESSAGE[8] = "U". 
+ yThe character at position 18 in the sentence is “.” and hence MESSAGE[18]	=	".".
+ yThe method findFirst('A',	MESSAGE) returns 0.
+ yThe method findFirst('S',	MESSAGE) returns 9.
+ yThe method findFirst('Z',	MESSAGE) returns −1.
+ (e) Construct an efficient algorithm for the method findFirst().  You should use the 
+function len(), which returns the number of characters in an array (for example, 
+len(MESSAGE) returns 19).[6]
+– 4 –N17/4/COMSC/HP1/ENG/TZ0/XX

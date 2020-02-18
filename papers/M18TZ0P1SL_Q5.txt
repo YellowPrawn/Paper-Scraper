@@ -1,0 +1,4 @@
+
+
+ Construct a logic diagram for the following Boolean expression.
+                                                                                                        not A or (A and B) [3]

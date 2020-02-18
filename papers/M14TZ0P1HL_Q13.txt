@@ -1,0 +1,44 @@
+
+
+ The faceplate of a car stereo has six buttons for selecting one of six preferred radio stations.  
+As part of the internal representation of a microprocessor there is an array with six positions, 
+carrying the information about the radio frequencies, as follows.
+Radio
+[0][1][2][3][4][5]
+100.488.790.2104.593.8106.2
+(a) State the information at Radio[2].  
+[1]
+(b)    Outline how a numerical frequency could be stored in a fixed-length string. 
+[2]
+(c)   Construct   an   algorithm   in   pseudocode   that   calculates   the   range   of   frequencies    
+(ie the difference between the highest and lowest frequencies) of any set of six selected 
+radio stations. 
+[6]
+The  two-dimensional  array  
+Stats provides an indication of how often a specific station is 
+listened to by the user.  For each button in the faceplate it records how often it has been clicked 
+in the last 48 hours.  
+Stats is ordered by the second column. 
+513
+49
+08
+34
+13
+22
+Stats
+Both Radio and Stats are used by a procedure that allows the user to access the radio frequencies 
+that are listened to most often, as recorded in 
+Stats, by flicking a lever on the steering wheel.  
+The frequencies are accessed cyclically, ie after the least used frequency the procedure returns 
+to the most used.  For this reason a queue Q is used.
+(d)  Construct  an  algorithm  in  pseudocode  that,  by  using  the  structures  
+Radio  and  Stats, 
+performs the following steps:
+• it inserts the radio frequencies in the queue Q, following the actual order of preference; 
+and then
+• it uses the queue Q, cyclically, to output an element each time the lever is flicked.
+[6]
+
+2214-7011
+– 6 –
+M14/4/COMSC/HP1/ENG/TZ0/XX

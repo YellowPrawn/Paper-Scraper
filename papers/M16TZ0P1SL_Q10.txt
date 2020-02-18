@@ -1,0 +1,30 @@
+
+
+ Trace the following fragment, for N=139 and L=3, by copying and completing the trace table given 
+below.
+     D = N div L
+     Z = 1
+     B = false
+     loop while Z<L 
+    D = D div L
+       Z = Z+1
+       B = NOT B 
+     end loop 
+	   	 if	(D	≠	0	AND	B)	then	
+	   	 	 output(D,	B)	
+      else  
+	   	 	 output(Z,	NOT	B)
+     end if
+DZBZ<L ?output
+...............
+[4]
+M16/4/COMSC/SP1/ENG/TZ0/XX
+
+– 4 –
+Blank page
+M16/4/COMSC/SP1/ENG/TZ0/XX
+
+– 5 –
+Turn over 
+Section B
+Answer all questions.

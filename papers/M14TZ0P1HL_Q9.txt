@@ -1,0 +1,4 @@
+
+
+ Outline the role of paging in the management of primary memory.
+[2]

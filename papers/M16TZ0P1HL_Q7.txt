@@ -1,0 +1,4 @@
+
+
+ Outline why a virtual machine is an example of abstraction that is particularly useful when 
+testing software on different platforms. [3]

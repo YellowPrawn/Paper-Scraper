@@ -1,0 +1,5 @@
+
+
+ In the context of a networked world, state the role of
+ (a) a client.[1]
+ (b) a server.[1]

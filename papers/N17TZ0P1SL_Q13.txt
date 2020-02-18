@@ -1,0 +1,55 @@
+
+  A character array S holds the word “PSEUDOCODE”.
+[0][1][2][3][4][5][6][7][8][9]
+PSEUDOCODE
+ (a) State the index of character “U” in the array S.[1]
+ (b) Consider the following algorithm.  The function len() returns the number of characters 
+in an array (for example, len(S) is 10).
+      K = 0
+      CL = 0
+      loop while K < len(S)
+           if S[K] = "E" then
+             CL = CL + 1
+               end     if
+           K = K + 1
+          end     loop
+          output     CL
+  For this algorithm, copy and complete the following trace table.[4]
+KCLK < len(S)S[K] = "E"output
+00TRUEFALSE...
+...............
+ A simple method of encoding a message is to use substitutions to produce a cryptogram.  
+ 
+ Given a positive integer N and the array UPCASELETTERS containing letters in alphabetical 
+order, a new array SUBSTITUTE is created by shifting the entire contents of UPCASELETTERS 
+to the left, N	times.		As	an	element	moves	off	the	left	of	the	array,	it	moves	back	into	the	right	
+side of the array.
+ For example, given the array UPCASELETTERS:
+[0][1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25]
+ABCDEFGHIJKLMNOPQRSTUVWXYZ
+         When         N = 5 the array SUBSTITUTE will be:
+[0][1][2][3][4][5][6][7][8][9][10][11][12][13][14][15][16][17][18][19][20][21][22][23][24][25]
+FGHIJKLMNOPQRSTUVWXYZABCDE
+ (c) Construct an algorithm which creates the array SUBSTITUTE.  You may assume that a 
+positive integer N and array UPCASELETTERS are given.[5]
+(This question continues on the following page)
+– 6 –N17/4/COMSC/SP1/ENG/TZ0/XX
+
+– 7 –N17/4/COMSC/SP1/ENG/TZ0/XX
+(Question 13 continued)
+ This encoding method produces a cryptogram of a sentence by replacing each uppercase 
+letter of the sentence with its substitute.  Other characters in the sentence are not changed.
+ For example, using the arrays shown on page 6:
+  Input (sentence): ARS LONGA, VITA BREVIS.
+  Output (cryptogram): FWX QTSLF, ANYF GWJANX. 
+ The following algorithm fragment inputs the characters, one by one, from the input sentence, 
+and outputs its cryptogram using the method encode().
+ loop while NOT end-of-input-sentence
+      CH = input()
+      CRYPTEDCH= encode(CH, UPCASELETTERS, SUBSTITUTE)
+          output     CRYPTEDCH
+ end loop
+ The method encode() accepts a character CH and two arrays UPCASELETTERS and 
+SUBSTITUTE,	as	defined	above,	and	returns	the	corresponding	character	CRYPTEDCH of the 
+character CH.
+ (d) Explain the steps to construct an algorithm for the method encode().[5]

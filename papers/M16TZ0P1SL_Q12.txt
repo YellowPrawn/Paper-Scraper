@@ -1,0 +1,19 @@
+
+
+ A college has a high-speed network.  The network is accessible to all students and staff 
+through their personal accounts.
+ The network may be accessed by using desktop computers available in the college.  When 
+in the college, users can also use personal laptops to connect wirelessly or dock with an 
+Ethernet cable.  When not in the college, users can connect via a virtual private network (VPN) 
+over the internet. 
+ (a) In the given context, distinguish between Ethernet and wireless in terms of reliability  
+of transmission. [4]
+     (b)     Describe     two features of a VPN that make it secure. [4]
+     (c)     State     one technology that is necessary for a VPN. [1]
+The college is devising a policy for the use of its IT resources and services.  They are 
+considering prohibiting the use of external services such as cloud storage and blogs.
+	(d)	    In	relation	to	the	specific	activities	that	may	be	carried	out	by	students,	discuss	two 
+advantages and two disadvantages of the use of external services.   [6]
+M16/4/COMSC/SP1/ENG/TZ0/XX
+
+– 6 –

@@ -1,0 +1,6 @@
+
+
+ (a) Describe the characteristics of a stack.
+[2]
+     (b)     Identify     two	applications	of	a	stack	in	computing.
+[2]

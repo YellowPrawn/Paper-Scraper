@@ -1,0 +1,20 @@
+
+
+ An	application	package	used	in	an	office	includes	a	word	processor.		A	secretary	uses	the	
+word	processor	to	create	a	text	file.
+	(a)	    Describe	how	a	spellchecker	checks	whether	a	word	in	a	text	file	is	correctly	spelt 
+or not.[2]
+	The	text	file	is	automatically	saved	at	regular	periods	while	being	edited.
+     (b)     State     one advantage of this feature.[1]
+     (c)     Identify     two additional features of a word processing package that could be useful for 
+this	office.[2]
+ (d) Outline the purpose of one application software package other than a word processing 
+package	that	could	be	used	in	this	office.[2]
+	All	files	created	in	this	office	contain	information	important	to	the	business.
+ (e) Outline the security measures that should be taken to prevent data loss.[2]
+	The	office	manager	decides	to	buy	and	install	new	software	and	hardware.		
+      (f)      Outline      one problem that may arise from the installation of new hardware and software 
+in	the	office.[2]
+ The changeover to the new system can be achieved by either direct changeover or 
+phased conversion.
+ (g)  Compare direct changeover and phased conversion.[4]
