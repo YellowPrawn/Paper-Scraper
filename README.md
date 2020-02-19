@@ -6,6 +6,8 @@
    {
        "question":"QUESTION",
        "classification":"CLASSIFICATION",
+       "root":"ROOT FILE",
+				   "difficulty":"DIFFICULTY"
    }
 
 Classification is case sensitive. There are no preset classifications except for those used in the sample training data
