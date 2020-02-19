@@ -27,24 +27,13 @@ module.exports.convert = function() {
 	);	
 }
 
-function scrape(fileName) { 
-  return new Promise(resolve => {
-    const data = scraper.convert(fileName);
-    resolve(true);
-  });
-}
 
-async function parse(fileName) {
-	try {
-	  	if(await scrape(fileName)){
-			const sentences = [];	
+function parse(fileName) {
+	  	const data = scraper.convert(fileName);
+		const sentences = [];	
 
-		  	for(var i = 0; i < getFiles.getDataSize(); i++){
-		  		sentences[i] = getFiles.getData(fileName,i);
-		  	}
-		  	const item = sortData.sort(sentences,fileName);
-	  	}
-	} catch (e) {
-		parse(fileName);
-	}
+		for(var i = 0; i < getFiles.getDataSize(fileName); i++){
+		  	sentences[i] = getFiles.getData(fileName,i);
+		}
+		const item = sortData.sort(sentences,fileName);
 }

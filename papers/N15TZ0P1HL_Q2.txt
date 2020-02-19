@@ -1,4 +1,0 @@
-
-
- By making direct reference to the technologies used, explain how a virtual private network 
-(VPN) allows a travelling salesperson to connect securely to their company’s network.[4]

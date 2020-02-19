@@ -1,4 +1,0 @@
-
-
- Construct a logic diagram for the following expression.
-                                                                                                        not A or (A and B)                                                             [3]

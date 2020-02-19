@@ -1,7 +1,0 @@
-
-
- An international company is in the process of moving its Head Office from Europe to Asia. 
-(a)     Identify     two possible compatibility issues as a part of data migration. [2]
-(b) Outline how a virtual private network (VPN) will allow employees who are in Europe to 
-communicate with the Head Office in Asia. [2] 
-(c)     Outline     one social issue associated with this process. [2]

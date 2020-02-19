@@ -1,4 +1,0 @@
-
-
- Explain why protocols are used in network communications. [3]
-M18/4/COMSC/SP1/ENG/TZ0/XX– 2 –

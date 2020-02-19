@@ -1,5 +1,0 @@
-
-
- A small hotel buys a software package to manage their bookings.
-         (a)         Describe two types of documentation that should be provided with the software package.[4]
-     (b)     State     two methods of delivering user training.[2]

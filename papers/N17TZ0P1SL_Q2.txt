@@ -1,4 +1,0 @@
-
-
- Two fundamental operations of a computer are add and retrieve.  State another two 
-fundamental operations. [2]

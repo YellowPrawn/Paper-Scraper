@@ -1,6 +1,0 @@
-
-
- Human interaction with the computer system includes a range of usability problems.
-	(a)	    Define	the	term	usability.[1]
-     (b)     Identify     two methods that could be used to improve the accessibility of a computer 
-system. [2]

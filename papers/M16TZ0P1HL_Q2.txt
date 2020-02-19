@@ -1,3 +1,0 @@
-
-
- Outline the use of a failover system. [2]

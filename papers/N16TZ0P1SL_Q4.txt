@@ -1,7 +1,0 @@
-
-
- Construct a truth table for the Boolean expression 
-not (A xor B) and C.   
-Use the following headings in your table.
-ABCA xor BNOT (A xor B)not (A xor B) and C
-[4]

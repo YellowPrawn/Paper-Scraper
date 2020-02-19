@@ -1,6 +1,0 @@
-
-
- The machine instruction cycle is the process by which a program instruction is fetched, 
-decoded, executed and the results are stored.
- (a) State where all instructions and data are stored.[1]
- (b)  Outline the role of the data bus and address bus in this process.[2]

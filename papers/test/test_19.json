@@ -1,6 +1,0 @@
-{
-	"question": "Using the procedure total construct the pseudocode to output the day of the week with the highest average number of passengers, and the value of this average. You should make use of the sub procedure convert() which converts the numbers 0 to 6 into days of the week, for example convert(1) will return “Tuesday”. [3]",
-	"classification": "topic 4",
-	"root": "M184COMSCHP1ENGTZ0XX",
-	"difficulty": "medium"
-}

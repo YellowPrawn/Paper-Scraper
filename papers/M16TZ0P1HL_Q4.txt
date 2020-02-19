@@ -1,5 +1,0 @@
-
-
- Construct the truth table for the following expression.
-                  A         
-xor (B or C) [3]

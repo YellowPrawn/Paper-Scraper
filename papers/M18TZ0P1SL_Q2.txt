@@ -1,3 +1,0 @@
-
-
- Outline the role of the memory data register in the machine execution cycle. [2]

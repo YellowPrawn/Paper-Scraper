@@ -1,4 +1,5 @@
 const fs = require('fs');
+const scraper = require('./scraper.js');
 
 module.exports.setTestSize = function(){//get size of test data
 	var i = 0;
@@ -28,9 +29,8 @@ module.exports.getTestData = function(i){
 	return jsonContent;
 }
 
-module.exports.getDataSize = function(){//get size of actual data
-	const data = fs.readFileSync('./papers/dataSize.txt','utf8');
-	console.log(data);
+module.exports.getDataSize = function(fileName){//get size of actual data
+	data = scraper.getDataSize(fileName);
 	return data;
 }
 

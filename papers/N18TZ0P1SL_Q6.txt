@@ -1,3 +1,0 @@
-
-
- Describe how data is transmitted by packet switching. [4]

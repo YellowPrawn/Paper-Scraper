@@ -1,3 +1,0 @@
-
-
- Explain the importance of the memory management function of an operating system. [3]

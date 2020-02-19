@@ -1,3 +1,0 @@
-
-
- Outline the main steps involved in a selection sort.[3]

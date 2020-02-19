@@ -1,3 +1,0 @@
-
-
- Calculate how many different colours can be represented using two hexadecimal characters. [2]

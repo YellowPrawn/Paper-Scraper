@@ -6,13 +6,12 @@ const fs = require('fs');
 
 module.exports.sort = function(sentences, fileName){
 	for(var i = 0; i < getFiles.getTestSize(); i++){//learning functions
-		console.log(i);
 		data = getFiles.getTestData(i);
 		classifier.learn(data.question,data.classification);
 		difficulty.learn(data.question,data.difficulty);
 	}
 
-	for(var i = 0; i < getFiles.getDataSize(); i++){//adding new data into test set
+	for(var i = 0; i < getFiles.getDataSize(fileName); i++){//adding new data into test set
 			console.log(classifier.categorize(sentences[i]));
 			console.log(difficulty.categorize(sentences[i]));
 			var jsonData = 

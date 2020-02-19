@@ -1,3 +1,0 @@
-
-
- Explain why cache memory can speed up the processing within a computer.[2]

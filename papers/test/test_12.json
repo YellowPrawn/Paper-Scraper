@@ -1,6 +1,1 @@
-{
-	"question": "If the tree is populated with the data from the stack, the first item popped off will become the root. For each subsequent item popped from the stack, a recursive procedure is followed until the item is correctly placed in the tree. (c) Without writing code, describe this recursive procedure [4]",
-	"classification": "topic 5",
-	"root": "M184COMSCHP1ENGTZ0XX",
-	"difficulty": "hard"
-}
+{"classification":"obi wan","question":"General Kenobi\r\n","root":"question1","difficulty":"easy"}

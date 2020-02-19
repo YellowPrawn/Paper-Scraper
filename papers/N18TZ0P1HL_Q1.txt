@@ -1,4 +1,0 @@
-
-
- (a) Outline what is meant by the term computer network. [2]
-(b) Describe one problem resulting from low bandwidth in a computer network.                         [2]

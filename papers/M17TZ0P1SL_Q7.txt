@@ -1,3 +1,0 @@
-
-
- Explain how compression of data may lead to negative consequences. [3]

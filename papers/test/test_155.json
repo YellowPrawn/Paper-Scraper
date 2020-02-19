@@ -1,1 +1,0 @@
-{"classification":"topic 4","question":"\n\n Consider the following algorithm.\nBegin\nK \n= 47\nN \n= 10\nK \n= K div 2\nK mod N \n< 3\nOutput K\nEnd\nOutput K\nYESNO\n Determine the outputs that will be produced by this algorithm. [3]","root":"M18TZ0P1SL","difficulty":"medium"}

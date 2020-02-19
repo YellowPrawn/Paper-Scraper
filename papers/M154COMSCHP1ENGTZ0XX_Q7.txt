@@ -1,7 +1,0 @@
-
-
-      Describe      one way that the operating system of a networked workstation hides the complexity 
-of the network from the user.  [3]
-M15/4/COMSC/HP1/ENG/TZ0/XX
-
-– 4 –

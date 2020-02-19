@@ -1,1 +1,0 @@
-{"classification":"topic 4","question":"\n\n Construct a trace table for the following algorithm\n    A = 3\n   B = 7\n   loop while B >= A\n     A = A + 1\n      output(B  –  A)\n     B = B - 1\n    end  loop  [4]\nN18/4/COMSC/SP1/ENG/TZ0/XX– 2 –\n\nSection B\nAnswer all questions.","root":"N18TZ0P1SL","difficulty":"medium"}

@@ -1,4 +1,0 @@
-
-
- Distinguish between the use of two types of primary memory.
-[2]

@@ -1,5 +1,0 @@
-
-
- Use a selection sort to put the following set of numbers into order from highest to lowest.   
-List the results after each pass.
-   12     52     16     42     88     86 [3]

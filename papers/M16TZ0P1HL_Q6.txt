@@ -1,5 +1,0 @@
-
-
- The following list of numbers needs to be put into ascending order.
-9 ,  11 ,  3 ,  4 ,  5 ,  7 ,  1 ,  2
- State the list that would be obtained after two iterations of a bubble sort. [1]

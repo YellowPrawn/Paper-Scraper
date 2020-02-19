@@ -1,3 +1,0 @@
-
-
- Describe how the cache memory can speed up the functioning of a processor. [2]

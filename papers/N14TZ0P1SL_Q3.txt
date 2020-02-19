@@ -1,4 +1,0 @@
-
-
- Outline the relationship between binary and hexadecimal.
-[2]

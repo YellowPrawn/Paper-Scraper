@@ -1,3 +1,0 @@
-
-
- Outline the reason why recursive solutions can be memory intensive.[2]
