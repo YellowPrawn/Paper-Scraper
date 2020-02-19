@@ -6,6 +6,8 @@
    {
        "question":"QUESTION",
        "classification":"CLASSIFICATION",
+       "root":"ROOT FILE",
+				   "difficulty":"DIFFICULTY"
    }
 
 Classification is case sensitive. There are no preset classifications except for those used in the sample training data
@@ -16,4 +18,4 @@ If you make a mistake when inputting data, relaunch the executable
 
 Do not put extra spaces behind text or you might break the classifier
 
-To update the executable, find directory in console and enter command pkg . --targets node10-win-x64
+To update the executable, find directory in console and enter command "pkg . --targets node10-win-x64"

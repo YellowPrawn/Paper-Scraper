@@ -27,7 +27,6 @@ module.exports.convert = function() {
 	);	
 }
 
-
 function parse(fileName) {
 	  	const data = scraper.convert(fileName);
 		const sentences = [];	
