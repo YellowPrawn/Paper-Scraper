@@ -25,13 +25,7 @@ function input(){
 							const data = getFiles.getTestData(i);
 							switch(item){
 								case "classification":
-									var jsonData = 
-								    {
-								    	"classification": `${amendment}`,//classifying data
-										"question": `${data.question}`,
-										"root": `${data.root}`,
-										"difficulty": `${data.difficulty}`//classifying difficulty
-									};
+									var jsonData = {"classification": `${amendment}`,"question": `${data.question}`,"root": `${data.root}`,"difficulty": `${data.difficulty}`};
 								    jsonContent = JSON.stringify(jsonData);
 
 									fs.writeFile(`./papers/test/test_${i}.json`, jsonContent, 'utf8', function (err) {
@@ -40,13 +34,7 @@ function input(){
 									break;
 
 								case "topic":
-									var jsonData = 
-								    {
-								    	"classification": `${amendment}`,//classifying data
-										"question": `${data.question}`,
-										"root": `${data.root}`,
-										"difficulty": `${data.difficulty}`//classifying difficulty
-									};
+									var jsonData = {"classification": `${amendment}`,"question": `${data.question}`,"root": `${data.root}`,"difficulty": `${data.difficulty}`};
 								    jsonContent = JSON.stringify(jsonData);
 
 									fs.writeFile(`./papers/test/test_${i}.json`, jsonContent, 'utf8', function (err) {
@@ -55,13 +43,7 @@ function input(){
 									break;
 
 								case "difficulty":
-									var jsonData = 
-								    {
-								    	"classification": `${data.classification}`,//classifying data
-										"question": `${data.question}`,
-										"root": `${data.root}`,
-										"difficulty": `${amendment}`//classifying difficulty
-									};
+									var jsonData = {"classification": `${data.classification}`,"question": `${data.question}`,"root": `${data.root}`,"difficulty": `${amendment}`};
 								    jsonContent = JSON.stringify(jsonData);
 
 									fs.writeFile(`./papers/test/test_${i}.json`, jsonContent, 'utf8', function (err) {
@@ -69,13 +51,7 @@ function input(){
 									});	
 									break;
 								case "question":
-									var jsonData = 
-								    {
-								    	"classification": `${data.classification}`,//classifying data
-										"question": `${amendment}`,
-										"root": `${data.root}`,
-										"difficulty": `${data.difficulty}`//classifying difficulty
-									};
+									var jsonData = {"classification": `${data.classification}`,"question": `${amendment}`,"root": `${data.root}`,"difficulty": `${data.difficulty}`};
 								    jsonContent = JSON.stringify(jsonData);
 
 									fs.writeFile(`./papers/test/test_${i}.json`, jsonContent, 'utf8', function (err) {

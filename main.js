@@ -10,7 +10,7 @@ module.exports.main = function(){
 
 function start(){
 
-	const readline = require('readline').createInterface({
+	const readline = require('readline').createInterface({//calls readline for console input
 		input: process.stdin,
 		output: process.stdout
 	})

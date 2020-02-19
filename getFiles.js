@@ -30,6 +30,7 @@ module.exports.getTestData = function(i){
 
 module.exports.getDataSize = function(){//get size of actual data
 	const data = fs.readFileSync('./papers/dataSize.txt','utf8');
+	console.log(data);
 	return data;
 }
 

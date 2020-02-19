@@ -16,4 +16,4 @@ If you make a mistake when inputting data, relaunch the executable
 
 Do not put extra spaces behind text or you might break the classifier
 
-To update the executable, find directory in console and enter command pkg . --targets node-10-win-x64
+To update the executable, find directory in console and enter command pkg . --targets node10-win-x64

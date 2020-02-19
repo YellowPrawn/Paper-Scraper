@@ -3,7 +3,7 @@ const officegen = require('officegen');
 const fs = require('fs');
 const main = require('./main.js');
 
-module.exports.create = function(){
+module.exports.create = function(){ //calls readline for console input
 	const readline = require('readline').createInterface({
 		input: process.stdin,
 		output: process.stdout
@@ -33,7 +33,7 @@ module.exports.create = function(){
 											balTemp = true;
 										}
 									}
-									compile(balance(questions, ratio, topics, balTemp, num));//TODO: implement concating data into a PDF file.
+									compile(balance(questions, ratio, topics, balTemp, num)); //calls compile() function
 									readline.close();
 									main.main();
 								}
@@ -99,7 +99,7 @@ function balanceCheck(data, count, balTemp){
 	}
 }
 
-function compile(final){//TODO: fix thing
+function compile(final){
 	// Create an empty Word object:
 	var d = new Date();
 	let docx = officegen('docx')

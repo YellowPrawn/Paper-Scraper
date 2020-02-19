@@ -37,13 +37,14 @@ function scrape(fileName) {
 async function parse(fileName) {
 	try {
 	  	if(await scrape(fileName)){
-			const sentences = [];
+			const sentences = [];	
+
 		  	for(var i = 0; i < getFiles.getDataSize(); i++){
 		  		sentences[i] = getFiles.getData(fileName,i);
 		  	}
 		  	const item = sortData.sort(sentences,fileName);
 	  	}
 	} catch (e) {
-		parse();
+		parse(fileName);
 	}
 }
