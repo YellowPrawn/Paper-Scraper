@@ -9,14 +9,14 @@ module.exports.convert = function(fileName){//public module to split raw data in
     var temp;
     var i = 1;
 
-    while(true){
-        const num = [`${i.toString()}. `,`${i.toString()}) `];//sorting the data by question number
-        if (sortedData[sortedData.length-1].includes(num[0])){
-            temp = sortedData[sortedData.length-1].split(num[0]);//split by each common question identifier
+    while(true){//split everytime a question identifier is found
+        const num = [`${i.toString()}. `,`${i.toString()}) `];//an array of common question identifiers
+        if (sortedData[sortedData.length-1].includes(num[0])){//split by n. where n is the question number
+            temp = sortedData[sortedData.length-1].split(num[0]);
             sortedData.pop();
             sortedData.push(temp[0]);
             sortedData.push(temp[1]);
-        } else if (sortedData[sortedData.length-1].includes(num[1])){
+        } else if (sortedData[sortedData.length-1].includes(num[1])){//split by n) where n is the question number
             temp = sortedData[sortedData.length-1].split(num[1]);
             sortedData.pop();
             sortedData.push(temp[0]);
@@ -40,14 +40,14 @@ module.exports.getDataSize = function(fileName){//public module to get data size
     var temp;
     var i = 1;
 
-    while(true){
-        const num = [`${i.toString()}. `,`${i.toString()}) `];//sorting the data by question number
-        if (sortedData[sortedData.length-1].includes(num[0])){
-            temp = sortedData[sortedData.length-1].split(num[0]);//split by each common question identifier
+    while(true){//split everytime a question identifier is found
+        const num = [`${i.toString()}. `,`${i.toString()}) `];//an array of common question identifiers
+        if (sortedData[sortedData.length-1].includes(num[0])){//split by n. where n is the question number
+            temp = sortedData[sortedData.length-1].split(num[0]);
             sortedData.pop();
             sortedData.push(temp[0]);
             sortedData.push(temp[1]);
-        } else if (sortedData[sortedData.length-1].includes(num[1])){
+        } else if (sortedData[sortedData.length-1].includes(num[1])){//split by n) where n is the question number
             temp = sortedData[sortedData.length-1].split(num[1]);
             sortedData.pop();
             sortedData.push(temp[0]);
