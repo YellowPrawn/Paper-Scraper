@@ -2,8 +2,8 @@ const getFiles = require('./getFiles.js');
 const fs = require('fs');
 const main = require('./main.js');
 
-module.exports.amend = function(){
-	for(var i = 0; i < getFiles.getTestSize(); i++){
+module.exports.amend = function(){//public module which prints a UI header and calls input function
+	for(var i = 0; i < getFiles.getTestSize(); i++){//prints data from all categorized data
 		const data = getFiles.getTestData(i);
 		console.log(`\n\n\n------------\n     ${i}     \n------------\n`);
 		console.log(`root file:   ${data.root}\n\ntopic:   ${data.classification}\n\ndifficulty:   ${data.difficulty}\n\nquestion:${data.question}`);
@@ -11,8 +11,8 @@ module.exports.amend = function(){
 	input();
 }
 
-function input(){
-	const readline = require('readline').createInterface({
+function input(){//function to make amendments to all pieces of data
+	const readline = require('readline').createInterface({//instantiate a readline record
 		input: process.stdin,
 		output: process.stdout
 	})
@@ -23,7 +23,7 @@ function input(){
 					readline.question('Input amendment\n',
 						(amendment) => {
 							const data = getFiles.getTestData(i);
-							switch(item){
+							switch(item){//switch to determine element to amend
 								case "classification":
 									var jsonData = {"classification": `${amendment}`,"question": `${data.question}`,"root": `${data.root}`,"difficulty": `${data.difficulty}`};
 								    jsonContent = JSON.stringify(jsonData);
@@ -59,7 +59,7 @@ function input(){
 									});	
 									break;
 							}
-							readline.question('Make additional amendments? (Y/N)\n',
+							readline.question('Make additional amendments? (Y/N)\n',//if user requires further edits, make a recursive call
 								(additional) => {
 									if(additional=="Y"){
 										readline.close();

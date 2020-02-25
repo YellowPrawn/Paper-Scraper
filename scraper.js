@@ -3,7 +3,7 @@ const getFiles = require(`./getFiles.js`);
 
 var sortedData;
 
-module.exports.convert = function(fileName){
+module.exports.convert = function(fileName){//public module to split raw data into individual questions
     let data = fs.readFileSync(`./papers/${fileName}.txt`);
     sortedData = [data.toString()];
     var temp;
@@ -12,7 +12,7 @@ module.exports.convert = function(fileName){
     while(true){
         const num = [`${i.toString()}. `,`${i.toString()}) `];//sorting the data by question number
         if (sortedData[sortedData.length-1].includes(num[0])){
-            temp = sortedData[sortedData.length-1].split(num[0]);
+            temp = sortedData[sortedData.length-1].split(num[0]);//split by each common question identifier
             sortedData.pop();
             sortedData.push(temp[0]);
             sortedData.push(temp[1]);
@@ -34,7 +34,7 @@ module.exports.convert = function(fileName){
     getFiles.setDataSize(sortedData.length); //amount of data which needs to be sorted
 }
 
-module.exports.getDataSize = function(fileName){
+module.exports.getDataSize = function(fileName){//public module to get data size
     let data = fs.readFileSync(`./papers/${fileName}.txt`);
     sortedData = [data.toString()];
     var temp;
@@ -43,7 +43,7 @@ module.exports.getDataSize = function(fileName){
     while(true){
         const num = [`${i.toString()}. `,`${i.toString()}) `];//sorting the data by question number
         if (sortedData[sortedData.length-1].includes(num[0])){
-            temp = sortedData[sortedData.length-1].split(num[0]);
+            temp = sortedData[sortedData.length-1].split(num[0]);//split by each common question identifier
             sortedData.pop();
             sortedData.push(temp[0]);
             sortedData.push(temp[1]);

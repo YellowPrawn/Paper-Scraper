@@ -4,7 +4,7 @@ const fs = require('fs');
 const main = require('./main.js');
 
 module.exports.create = function(){ //calls readline for console input
-	const readline = require('readline').createInterface({
+	const readline = require('readline').createInterface({//instantiate a readline record
 		input: process.stdin,
 		output: process.stdout
 	})
@@ -35,7 +35,7 @@ module.exports.create = function(){ //calls readline for console input
 									}
 									compile(balance(questions, ratio, topics, balTemp, num)); //calls compile() function
 									readline.close();
-									main.main();
+									main.main();//returns user to main menu
 								}
 							);
 						}
@@ -49,7 +49,7 @@ module.exports.create = function(){ //calls readline for console input
 function balance(questions, ratio, topic, balTemp, num){//returns appropriate number of questions
 	var final = [];
 	var list = [];
-	var count = [Number.parseInt(0.4*num,10), Number.parseInt(0.4*num,10), Number.parseInt(0.2*num,10)];
+	var count = [Number.parseInt(0.4*num,10), Number.parseInt(0.4*num,10), Number.parseInt(0.2*num,10)];//default weighting
 
 	console.log("\n\n\nQuestion origin files:");
 
@@ -61,11 +61,11 @@ function balance(questions, ratio, topic, balTemp, num){//returns appropriate nu
 		}
 
 		if(list.length==0){
-			console.log("no questions availiable, try again");
+			console.log("no questions availiable, try again");//if no questions match the criteria, print this
 			break;
 		}
-		while(Number.parseInt(final.length*ratio[i],10) != Number.parseInt(num*ratio[i],10) && list.length > final.length) {
-			const add = getRandomInt(list.length);//choose random integer TODO: fix range
+		while(Number.parseInt(final.length*ratio[i],10) != Number.parseInt(num*ratio[i],10) && list.length > final.length) {//ensures all criteria are met
+			const add = getRandomInt(list.length);//choose random integer
 			var check = true;
 			for(var j = 0; j < final.length; j++){//check if question has been added to final array
 				if(list[add].question!=final[j] && balanceCheck(list[add], count, balTemp)){
@@ -74,7 +74,7 @@ function balance(questions, ratio, topic, balTemp, num){//returns appropriate nu
 					check = false;
 				}
 			}
-			if(check==true){
+			if(check==true){//if question has not been added, add it
 				final.push(list[add].question);
 				console.log(list[add].root);
 			}
@@ -83,7 +83,7 @@ function balance(questions, ratio, topic, balTemp, num){//returns appropriate nu
 	return final;
 }
 
-function balanceCheck(data, count, balTemp){
+function balanceCheck(data, count, balTemp){//check if data matches requested criteria
 	if(balTemp==true){
 		if(count[0] != 0 && data.difficulty=="easy"){
 			return true;
@@ -119,7 +119,6 @@ function compile(final){
 		let pObj = docx.createP();
 		pObj.addText(`${i+1}) \n  ${final[i]}\n\n\n`);
 	}
-	// Let's generate the Word document into a file:
 
 	let out = fs.createWriteStream(`./files/${d.getFullYear()}_${d.getMonth()+1}_${d.getDate()}_${d.getMinutes()}_paper.docx`);
 
@@ -131,7 +130,7 @@ function compile(final){
 	docx.generate(out);
 }
 
-function getRandomInt(max) {
+function getRandomInt(max) {//get random number
 	return Math.floor(Math.random() * Math.floor(max));
 }
 

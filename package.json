@@ -1,6 +1,6 @@
 {
   "name": "paper-maker",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Create an exam paper.",
   "main": "main.js",
   "bin": "main.js",
