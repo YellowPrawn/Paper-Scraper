@@ -6,10 +6,11 @@ const fs = require('fs');
 
 module.exports.sort = function(sentences, fileName){
 	for(var i = 0; i < getFiles.getTestSize(); i++){//learning functions
+		console.log(i);
 		data = getFiles.getTestData(i);
 		classifier.learn(data.question,data.classification);
 		difficulty.learn(data.question,data.difficulty);
-	} //TODO: Not classifying data, revamp needed
+	}
 
 	for(var i = 0; i < getFiles.getDataSize(fileName); i++){//adding new data into test set
 			console.log(classifier.categorize(sentences[i]));

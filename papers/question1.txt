@@ -1,3 +1,4 @@
-1) Hello There
-2) General Kenobi
-3) You are a bold one
+1) Define inheritance
+2) Define stacks
+3) Define volatile memory
+4) Outline the fetch decode execute cycle

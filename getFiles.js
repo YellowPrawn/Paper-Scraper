@@ -35,7 +35,7 @@ module.exports.getDataSize = function(fileName){//get size of actual data
 }
 
 module.exports.setDataSize = function(i){//set size of actual data
-	fs.writeFile('./papers/dataSize.txt', i, 'utf8', function (err) {
+	fs.writeFileSync('./papers/dataSize.txt', i, 'utf8', function (err) {
   		if (err) throw err;
 	});
 }
