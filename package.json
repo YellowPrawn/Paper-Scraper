@@ -8,7 +8,7 @@
   "license": "MIT",
   "dependencies": {
     "bayes": "^0.0.7",
-    "d3-scale-chromatic": "^1.5.0",
+    "d3-scale-chromatic": "^3.0.0",
     "officegen": "^0.6.3",
     "pdf-parse": "^1.1.1",
     "request": "^2.88.0"
